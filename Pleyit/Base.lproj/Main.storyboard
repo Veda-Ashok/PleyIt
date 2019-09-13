@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14835.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14790.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="iOS 13.0 system colors" minToolsVersion="11.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Pleyit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6G-jf-gkr" userLabel="C2">
+                                <rect key="frame" x="60" y="162" width="95" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Screen Shot 2019-07-11 at 3.09.01 PM.png"/>
+                                <connections>
+                                    <action selector="noteClicked:" destination="BV1-FR-VrT" eventType="touchUpInside" id="3Ju-2j-5P7"/>
+                                </connections>
+                            </button>
+                            <button clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8if-QT-I9M" userLabel="D">
+                                <rect key="frame" x="163" y="162" width="95" height="253"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Screen Shot 2019-07-11 at 3.09.01 PM.png"/>
+                                <connections>
+                                    <action selector="noteClicked:" destination="BV1-FR-VrT" eventType="touchUpInside" id="E2S-5l-7Ad"/>
+                                </connections>
+                            </button>
+                            <button clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wn-wQ-Zle" userLabel="C#">
+                                <rect key="frame" x="130" y="162" width="60" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Screen Shot 2019-07-11 at 1.35.33 PM.png"/>
+                                <connections>
+                                    <action selector="noteClicked:" destination="BV1-FR-VrT" eventType="touchUpInside" id="9Su-iI-ral"/>
+                                </connections>
+                            </button>
+                            <button clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBk-M8-7uN" userLabel="E">
+                                <rect key="frame" x="266" y="162" width="95" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Screen Shot 2019-07-11 at 3.09.01 PM.png"/>
+                                <connections>
+                                    <action selector="noteClicked:" destination="BV1-FR-VrT" eventType="touchUpInside" id="qi5-kg-T5A"/>
+                                </connections>
+                            </button>
+                            <button clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmL-YT-TrG" userLabel="Eb">
+                                <rect key="frame" x="233" y="159" width="60" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Screen Shot 2019-07-11 at 1.35.33 PM.png"/>
+                                <connections>
+                                    <action selector="noteClicked:" destination="BV1-FR-VrT" eventType="touchUpInside" id="NMt-mM-F5C"/>
+                                </connections>
+                            </button>
+                            <button clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYo-hu-LS1" userLabel="F">
+                                <rect key="frame" x="369" y="162" width="95" height="253"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Screen Shot 2019-07-11 at 3.09.01 PM.png"/>
+                                <connections>
+                                    <action selector="noteClicked:" destination="BV1-FR-VrT" eventType="touchUpInside" id="cQo-Wk-Txt"/>
+                                </connections>
+                            </button>
+                            <button clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lim-KN-fg8" userLabel="G">
+                                <rect key="frame" x="472" y="162" width="95" height="255"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Screen Shot 2019-07-11 at 3.09.01 PM.png"/>
+                                <connections>
+                                    <action selector="noteClicked:" destination="BV1-FR-VrT" eventType="touchUpInside" id="wdf-0C-CpS"/>
+                                </connections>
+                            </button>
+                            <button clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ar0-FY-1a7" userLabel="F#">
+                                <rect key="frame" x="439" y="159" width="60" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Screen Shot 2019-07-11 at 1.35.33 PM.png"/>
+                                <connections>
+                                    <action selector="noteClicked:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Itg-8b-zwa"/>
+                                </connections>
+                            </button>
+                            <button clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="984-rw-oeg" userLabel="A">
+                                <rect key="frame" x="575" y="162" width="95" height="254"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Screen Shot 2019-07-11 at 3.09.01 PM.png"/>
+                                <connections>
+                                    <action selector="noteClicked:" destination="BV1-FR-VrT" eventType="touchUpInside" id="idf-qb-U3Y"/>
+                                </connections>
+                            </button>
+                            <button clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQc-gu-Iih" userLabel="Ab">
+                                <rect key="frame" x="542" y="162" width="60" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Screen Shot 2019-07-11 at 1.35.33 PM.png"/>
+                                <connections>
+                                    <action selector="noteClicked:" destination="BV1-FR-VrT" eventType="touchUpInside" id="8bU-4C-jyc"/>
+                                </connections>
+                            </button>
+                            <button clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSo-gC-Eel" userLabel="B">
+                                <rect key="frame" x="678" y="162" width="95" height="254"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Screen Shot 2019-07-11 at 3.09.01 PM.png"/>
+                                <connections>
+                                    <action selector="noteClicked:" destination="BV1-FR-VrT" eventType="touchUpInside" id="6Zy-HH-gow"/>
+                                </connections>
+                            </button>
+                            <button clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWl-hb-Hvv" userLabel="Bb">
+                                <rect key="frame" x="645" y="162" width="60" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Screen Shot 2019-07-11 at 1.35.33 PM.png"/>
+                                <connections>
+                                    <action selector="noteClicked:" destination="BV1-FR-VrT" eventType="touchUpInside" id="EKI-pM-FhB"/>
+                                </connections>
+                            </button>
+                            <button clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSj-ke-Iwp" userLabel="C3">
+                                <rect key="frame" x="781" y="162" width="95" height="254"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Screen Shot 2019-07-11 at 3.09.01 PM.png"/>
+                                <connections>
+                                    <action selector="noteClicked:" destination="BV1-FR-VrT" eventType="touchUpInside" id="GXG-El-Cd6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33S-Kx-hbn">
+                                <rect key="frame" x="301" y="105" width="301" height="100"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="secondaryLabelColor"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" button="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstItem="33S-Kx-hbn" firstAttribute="centerX" secondItem="4qk-I5-YsI" secondAttribute="centerX" id="Xca-Fc-K5j"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
+                    </view>
+                    <connections>
+                        <outlet property="QuestionLabel" destination="33S-Kx-hbn" id="yXv-kp-oQk"/>
+                        <outletCollection property="notes" destination="D6G-jf-gkr" collectionClass="NSMutableArray" id="AwY-Xl-2PU"/>
+                        <outletCollection property="notes" destination="9wn-wQ-Zle" collectionClass="NSMutableArray" id="7If-91-Rc4"/>
+                        <outletCollection property="notes" destination="8if-QT-I9M" collectionClass="NSMutableArray" id="Owr-88-Dzi"/>
+                        <outletCollection property="notes" destination="rmL-YT-TrG" collectionClass="NSMutableArray" id="hny-CZ-rnj"/>
+                        <outletCollection property="notes" destination="QBk-M8-7uN" collectionClass="NSMutableArray" id="W7Q-Te-hT1"/>
+                        <outletCollection property="notes" destination="MYo-hu-LS1" collectionClass="NSMutableArray" id="QVr-Yg-eyb"/>
+                        <outletCollection property="notes" destination="Ar0-FY-1a7" collectionClass="NSMutableArray" id="hyr-id-AGw"/>
+                        <outletCollection property="notes" destination="lim-KN-fg8" collectionClass="NSMutableArray" id="ecx-va-UKv"/>
+                        <outletCollection property="notes" destination="EQc-gu-Iih" collectionClass="NSMutableArray" id="Pow-8s-wem"/>
+                        <outletCollection property="notes" destination="984-rw-oeg" collectionClass="NSMutableArray" id="XvY-wa-KKZ"/>
+                        <outletCollection property="notes" destination="WWl-hb-Hvv" collectionClass="NSMutableArray" id="2z2-W7-P82"/>
+                        <outletCollection property="notes" destination="LSo-gC-Eel" collectionClass="NSMutableArray" id="AdI-h9-q9j"/>
+                        <outletCollection property="notes" destination="DSj-ke-Iwp" collectionClass="NSMutableArray" id="VsN-uI-TEv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57.589285714285708" y="102.89855072463769"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Screen Shot 2019-07-11 at 1.35.33 PM.png" width="41" height="162"/>
+        <image name="Screen Shot 2019-07-11 at 3.09.01 PM.png" width="38" height="186"/>
+    </resources>
+    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+</document>

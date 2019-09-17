@@ -27,9 +27,9 @@ class GameViewController: UIViewController {
     @IBOutlet var QuestionLabel: UILabel!
     
     var Questions = [Question]()
-    var numQ = 0
-    
+    var ranNum = 13
     var numAns = Int()
+    var numQ = Int()
     
     @IBOutlet var notes: [UIButton]!
     let references = ["C2", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B", "C3"]
@@ -54,6 +54,8 @@ class GameViewController: UIViewController {
                      Question(Question: "Bb", Ans: Answers, Answer: 10),
                      Question(Question: "B", Ans: Answers, Answer: 11),
                      Question(Question: "C3",Ans: Answers, Answer: 12)]
+        
+        
         PickQ()
         
         // Load 'GameScene.sks' as a GKScene. This provides gameplay related content
@@ -83,22 +85,30 @@ class GameViewController: UIViewController {
         }
     }
     
-    func PickQ(){
+    func PickQ() {
+        print("Count ", Questions.count)
+        if Questions.count == 0 {
+            NSLog("Congrats! You did it!")
+        }
+        
         if Questions.count > 0{
+            numQ = Int.random(in: 0 ..< ranNum)
+            if(ranNum == 0){
+                QuestionLabel.text = Questions[0].Question
+                numAns = Questions[0].Answer
+            }
             // print("Count ", Questions.count)
             QuestionLabel.text = Questions[numQ].Question
             numAns = Questions[numQ].Answer
             
-            for x in 0..<notes.count{
-                notes[x].setTitle(Questions[numQ].Ans[x], for: UIControl.State.normal)
-            }
-            
-            // Questions.remove(at: numQ)
+           // ranNum -= 1;
+            print("RanNum: ", ranNum);
+        
             
         }
-        else{
-            NSLog("Congrats! You did it!")
-        }
+        //        else{
+        //            NSLog("Congrats! You did it!")
+        //        }
     }
     
     override var shouldAutorotate: Bool {
@@ -145,17 +155,28 @@ class GameViewController: UIViewController {
     func correctAnswer(note: Int){
         //        print("numAns ", numAns)
         //        print("numQ ",numQ)
-        //        print("Answer", references[numAns])
-        //        print("Question", (Questions[numQ]).Question)
+        //         print("Answer", references[numAns])
+        //         print("Answer picked", references[note])
+        //         print("Question", (Questions[numQ]).Question)
         if references[note]==(Questions[numQ]).Question{
             // if numAns == numQ {
             print("Correct!")
-            numQ = numQ+1
+            Questions.remove(at: numQ)
+            print("current status: ");
+            print(Questions.description)
+            ranNum -= 1
+            //numQ = numQ+1
             PickQ()
         }
         else{
             print("Incorrect")
-            Questions.append(Questions[numQ])
+            //Questions.append(Questions[numQ])
+           // ranNum += 1;
+//            for i in 0...Questions.count - 1{
+//                print("Questions: " , ranNum);
+//
+//            }
+//
             PickQ()
         }
     }
